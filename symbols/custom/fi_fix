@@ -1,0 +1,12 @@
+
+default partial alphanumeric_keys
+xkb_symbols "fi_fix" {
+
+	// remove nobreakspace 
+	key <SPCE> {
+		type[Group1] = "ONE_LEVEL",
+		symbols[Group1] = [ space ]
+	};
+
+};
+

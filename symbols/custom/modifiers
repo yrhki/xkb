@@ -1,0 +1,16 @@
+
+partial alphanumeric_keys
+xkb_symbols "ctrl_level5" {
+    replace key <LCTL> { [ ISO_Level5_Shift ] };
+	modifier_map Mod3	{ <LCTL> };
+};
+
+partial alphanumeric_keys
+xkb_symbols "caps_control" {
+    replace key <CAPS> { 
+		type[Group1] = "ONE_LEVEL",
+		symbols[Group1] = [ Control_L ],
+		actions[Group1] = [ SetMods(modifiers=Control) ]
+	};
+	modifier_map Control { <CAPS> };
+};

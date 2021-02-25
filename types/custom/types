@@ -1,0 +1,39 @@
+partial default xkb_types "types" {
+	type "CTRL+6" {
+		modifiers = Shift+LevelThree+LevelFive;
+		map[None] = Level1;
+		map[Shift] = Level2;
+		map[LevelThree] = Level3;
+		map[Shift+LevelThree] = Level4;
+		map[LevelFive] = Level5;
+		// To allow text selection with Shift
+		// preserve must be declared for the Shift+LevelFive combination
+		map[Shift+LevelFive]= Level6;
+		preserve[Shift+LevelFive]= Shift;
+		level_name[Level1] = "Base";
+		level_name[Level2] = "Shift";
+		level_name[Level3] = "Alt Base";  
+		level_name[Level4] = "Shift Alt";
+		level_name[Level5] = "Control";
+		level_name[Level6] = "Control Shift";
+	};
+
+	type "MAX" {
+		modifiers = Shift+Alt+LevelThree+LevelFive+ScrollLock+NumLock;
+		map[None] = Level1;
+		map[Shift] = Level2;
+		map[LevelThree] = Level3;
+		map[Shift+LevelThree] = Level4;
+		map[LevelFive] = Level5;
+		// To allow text selection with Shift
+		// preserve must be declared for the Shift+LevelFive combination
+		map[Shift+LevelFive]= Level6;
+		level_name[Level1] = "Base";
+		preserve[Shift+LevelFive]= Shift;
+		level_name[Level2] = "Shift";
+		level_name[Level3] = "Alt Base";  
+		level_name[Level4] = "Shift Alt";
+		level_name[Level5] = "Control";
+		level_name[Level6] = "Control Shift";
+	};
+};

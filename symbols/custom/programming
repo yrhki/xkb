@@ -1,0 +1,39 @@
+
+default partial alphanumeric_keys
+xkb_symbols "default" {
+
+    include "custom/modifiers(ctrl_level5)"
+    include "custom/modifiers(caps_control)"
+
+    key.type = "CTRL+6";
+
+    key <AC01>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, Home  ] };
+    key <AD03>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, End  ] };
+
+    key <AC06>      { [  NoSymbol, H, NoSymbol, NoSymbol, Left  ] };
+    key <AC07>      { [  Nosymbol, NoSymbol, NoSymbol, NoSymbol, Down  ] };
+    key <AC08>      { [  Nosymbol, NoSymbol, NoSymbol, NoSymbol, Up    ] };
+    key <AC09>      { [  Nosymbol, NoSymbol, NoSymbol, NoSymbol, Right ] };
+
+    // Extra function keys
+    key <FK01>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F13, F25 ] };
+    key <FK02>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F14, F26 ] };
+    key <FK03>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F15, F27 ] };
+    key <FK04>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F16, F28 ] };
+    key <FK05>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F17, F29 ] };
+    key <FK06>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F18, F30 ] };
+    key <FK07>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F19, F31 ] };
+    key <FK08>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F20, F32 ] };
+    key <FK09>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F21, F33 ] };
+    key <FK10>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F22, F34 ] };
+    key <FK11>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F23, F35 ] };
+    key <FK12>      { [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, F24      ] };
+
+    // Easier to reach
+    key <AE07>		{ [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceleft    ] };
+    key <AE08>		{ [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketleft  ] };
+    key <AE09>		{ [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketright ] };
+    key <AE10>		{ [  NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright   ] };
+
+};  
+
